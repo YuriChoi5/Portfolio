@@ -2,9 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   cursor: none;
 }
 
+.project-font {
+  font-family: "Permanent Marker", cursive;
+}
+
+.intro-font {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 5rem;
+}
