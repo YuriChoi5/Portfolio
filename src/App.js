@@ -1,22 +1,37 @@
-import './App.css';
+import "./App.css";
+import CustomCursor from "./component/CustomCursor";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CustomCursor />
+      <ul className="project-container">
+        <li>
+          <div class="image-container">
+            <img src="/img/pepe.png" alt="" class="zoom-image"></img>
+          </div>
+          <h2>Project 1</h2>
+          <p>hfktfkydkh</p>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="/img/pepe.png" alt="" class="zoom-image"></img>
+          </div>
+          <h2>Project 2</h2>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="/img/pepe.png" alt="" class="zoom-image"></img>
+          </div>
+          <h2>Project 3</h2>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="/img/pepe.png" alt="" class="zoom-image"></img>
+          </div>
+          <h2>Project 4</h2>
+        </li>
+      </ul>
     </div>
   );
 }
