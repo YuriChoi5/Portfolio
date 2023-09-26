@@ -79,19 +79,27 @@ const ProjectList = () => {
       const windowHeight =
         window.innerHeight || document.documentElement.clientHeight;
 
-      const newVisibleStates = Array.from(projectElements).map((projectElement) => {
+      const newVisibleStates = Array.from(projectElements).map((projectElement, index) => {
+
+        if (index === 0) {
+          // Always keep Project 1 visible
+          return true;
+        }
+
         const rect = projectElement.getBoundingClientRect();
         return rect.top <= windowHeight * 0.75;
+
+        
       });
 
       setVisibleStates(newVisibleStates);
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check visibility when the component mounts
+    handleScroll(); 
 
     return () => {
-      window.removeEventListener("scroll", handleScroll); // Clean up the event listener
+      window.removeEventListener("scroll", handleScroll); 
     };
   }, []);
 
