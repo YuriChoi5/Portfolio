@@ -89,7 +89,6 @@ const ProjectList = () => {
         const rect = projectElement.getBoundingClientRect();
         return rect.top <= windowHeight * 0.75;
 
-        
       });
 
       setVisibleStates(newVisibleStates);
@@ -121,6 +120,8 @@ const ProjectList = () => {
           <p>{project.description}</p>
         </div>
       ))}
+      
+      
     </section>
   );
 };

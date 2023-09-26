@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 3rem 0 5rem 0;
 }
 
 .title {
   text-align: left;
-  padding: 1rem 0;
+  padding: 1rem;
   transform: translateX(-2rem);
   transition: all 1s ease-out;
 }
@@ -21,7 +21,7 @@
   color: #333;
   font-weight: lighter;
   text-align: end;
-  width: 65rem;
+  max-width: 65rem;
   transform: translateX(2rem); 
   transition: opacity 0.5s ease, transform 1s ease-out;
 }

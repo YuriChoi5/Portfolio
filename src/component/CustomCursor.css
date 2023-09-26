@@ -12,3 +12,6 @@
     z-index: 9999; 
   }
   
+  .custom-cursor.clicked {
+    background-color: rgb(232, 12, 12, 0.5);
+  }
