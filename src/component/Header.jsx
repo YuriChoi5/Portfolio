@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Header = () => {
-    return (
-        <div>
-            j
-        </div>
-    );
-}
+  return <header>© / 2023</header>;
+};
 
-export default Header
+export default Header;

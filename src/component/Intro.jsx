@@ -18,6 +18,7 @@ const Intro = () => {
         growth and am passionate about crafting elegant and efficient web
         solutions in the field of modern web development.
       </h2>
+      <div className='skills'> React | Redux | Rest API | JavaScript | HTML5 | CSS3 </div>
     </section>
   );
 };

@@ -8,7 +8,7 @@
 }
 
 .project {
-  /* width: 30rem; */
+  width: 25rem;
   height: 40rem;
   padding: 1.5rem;
   display: flex;
@@ -38,11 +38,22 @@
 }
 
 .zoom-image {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s;
+  width: 25rem;
+  height: 25rem;
+  transition: transform 0.5s;
 }
 
 .zoom-image:hover {
   transform: scale(1.1);
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: .6rem 0;
+}
+
+.project-description {
+  font-size: 1.2rem;
+  margin: 0;
 }

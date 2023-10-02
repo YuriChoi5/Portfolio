@@ -1,73 +1,5 @@
-// import React, { useState, useEffect } from "react";
-// import "./ProjectList.css";
-
-// const ProjectList = () => {
-//   const [visible, setVisible] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const projectElements = document.querySelectorAll(".project");
-//       const windowHeight =
-//         window.innerHeight || document.documentElement.clientHeight;
-
-//       projectElements.forEach((projectElement) => {
-//         const rect = projectElement.getBoundingClientRect();
-
-//         if (rect.top <= windowHeight * 0.75) {
-//           setVisible(true);
-//         }
-//       });
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     handleScroll(); // Check visibility when the component mounts
-
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll); // Clean up the event listener
-//     };
-//   }, []);
-
-//   return (
-//     <section className="project-list-wrapper project-font">
-//       <div className="project-row">
-//         <div className={`project ${visible ? "visible" : ""}`}>
-//           <div class="image-container">
-//             <img src="/img/pepe.png" alt="" class="zoom-image"></img>
-//           </div>
-//           <h2>Project 1</h2>
-//           <p>hfktfkydkh</p>
-//         </div>
-//         <div className={`project ${visible ? "visible" : ""}`}>
-//           <div class="image-container">
-//             <img src="/img/pepe.png" alt="" class="zoom-image"></img>
-//           </div>
-//           <h2>Project 2</h2>
-//           <p>hfktfkydkh</p>
-//         </div>
-//       </div>
-//       <div className="project-row">
-//         <div className={`project ${visible ? "visible" : ""}`}>
-//           <div class="image-container">
-//             <img src="/img/pepe.png" alt="" class="zoom-image"></img>
-//           </div>
-//           <h2>Project 3</h2>
-//           <p>hfktfkydkh</p>
-//         </div>
-//         <div className={`project ${visible ? "visible" : ""}`}>
-//           <div class="image-container">
-//             <img src="/img/pepe.png" alt="" class="zoom-image"></img>
-//           </div>
-//           <h2>Project 4</h2>
-//           <p>hfktfkydkh</p>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ProjectList;
-
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./ProjectList.css";
 
 const ProjectList = () => {
@@ -82,7 +14,6 @@ const ProjectList = () => {
       const newVisibleStates = Array.from(projectElements).map((projectElement, index) => {
 
         if (index === 0) {
-          // Always keep Project 1 visible
           return true;
         }
 
@@ -113,11 +44,13 @@ const ProjectList = () => {
     <section className="project-list-wrapper project-font">
       {projects.map((project, index) => (
         <div key={project.id} className={`project ${visibleStates[index] ? "visible" : ""}`}>
+          <Link to={`/project/p ${project.id}`} className="project-link">
           <div className="image-container">
             <img src={`/img/pepe.png`} alt="" className="zoom-image" />
           </div>
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
+          <h2 className='project-title'>{project.title}</h2>
+          </Link>
+          <p className='project-description'>{project.description}</p>
         </div>
       ))}
       
