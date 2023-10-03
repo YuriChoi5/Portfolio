@@ -1,0 +1,35 @@
+html {
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-font {
+  font-family: "Permanent Marker", cursive;
+}
+
+.intro-font {
+  font-family: 'Shantell Sans', cursive;
+  font-size: 5rem;
+}
+
+.contact-font {
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(0, 0, 201, 0.5);
+}
+
+::selection {
+  /* background-color: #ffa500;  */
+  background-color: rgb(0, 0, 201, 0.5);
+  color: #fff; 
+}

@@ -1,0 +1,47 @@
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 5rem 0;
+}
+
+.title {
+  text-align: left;
+  padding: 1rem;
+  margin: 0;
+  transform: translateX(-2vmin);
+  transition: all 1s ease-out;
+}
+
+.title.animate {
+  transform: translateX(0);
+}
+
+.intro-small {
+  color: #333;
+  font-weight: lighter;
+  padding: 1rem;
+  text-align: end;
+  max-width: 65rem;
+  transform: translateX(2vmin); 
+  transition: opacity 0.5s ease, transform 1s ease-out;
+}
+
+.intro-small.animate {
+    transform: translateX(0);
+}
+
+.skills {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 1.5rem 0;
+  }
+}
