@@ -46,7 +46,7 @@ const ProjectList = () => {
         <div key={project.id} className={`project ${visibleStates[index] ? "visible" : ""}`}>
           <Link to={`/project/p ${project.id}`} className="project-link">
           <div className="image-container">
-            <img src={`/img/pepe.png`} alt="" className="zoom-image" />
+            <img src={`./img/pepe.png`} alt="" className="zoom-image" />
           </div>
           <h2 className='project-title'>{project.title}</h2>
           </Link>
