@@ -41,7 +41,7 @@
 .email:hover {
     /* color: rgb(0, 0, 201, 0.3); */
     /* font-style: italic; */
-    transform: rotateX(30deg) translateX(.5rem);
+    transform: rotateX(30deg) translateX(.7rem);
 
 }
 
@@ -59,11 +59,11 @@
     }
 
     .contact {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .email {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
   }
 

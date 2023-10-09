@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import CustomCursor from "./component/CustomCursor";
-import Header from "./component/Header";
+//import Header from "./component/Header";
 import Main from "./pages/Main";
 import Project1 from "./pages/Project1";
 import Project2 from "./pages/Project2";
